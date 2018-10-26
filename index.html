@@ -5,9 +5,94 @@
     <title>SitOnChair</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Relaway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
+
 <body>
 
+<header class="page-header">
+        <div class="container">
+    <!---  slash przenosi do katalogu --->
+            <h1 class="page-logo">
+                <a href="/" class="page-logo-link">
+                    sit <span>on</span> chair
+                </a>
+            </h1>
+
+        <nav class="page-nav">
+            <ul class="page-nav-list">
+                <li>
+                    <a href="">o firmie</a>
+    
+                    <ul class="page-nav-sublist">
+                        <li><a href="">aktualnosci</a></li>
+                        <li><a href="">nasz team</a></li>
+                        <li><a href="">historia</a></li>
+                    </ul>
+                </li>    
+                <li><a href="">galeria</a></li>
+                <li><a href="">kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main-banner-bg">
+    <div class="container">
+        <div class="banner">
+            <button class="button-prev" tabindex="2"> &lt</button>
+            <button class="button-next" tabindex="1"> &gt</button>
+        
+            <div class="banner-slides">
+                <div class="banner-slide banner-slide-show"></div>
+                <div class="banner-slide"></div>
+                <div class="banner-slide"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-contact">
+    <div class="container">
+        <h2 class="section-title">kontakt</h2>
+        <form action="" method="POST" class="form">
+            <div class="form-left">
+                <div class="form-row">
+                    <input type="text" name="name" id="form-left.name" placeholder="imie">
+                    <label for="name">Wpisz imie</label>
+                </div>
+
+                <div class="form-row">
+                    <input type="email" name="name" id="form-left.name" placeholder="email">
+                    <label for="name">Wpisz email</label>
+                </div>
+
+                <div class="form-row">
+                    <input type="textarea" id="form-left.message" placeholder="wiadomosc">
+                    <label for="name">Wpisz wiadomosc</label>
+                </div>
+            </div>
+            
+            <div class="form-right">
+                <div class="form-row">
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox-input" name="checkbox" id="checkbox">
+                        <span class="checkbox-text">
+                            Zgadzam sie na przetwarzanie danych osobowych
+                        </span>
+                    </label>
+
+                </div>
+
+            </div>
+        </form>
+    </div>    
+</div>
+
+<footer>
+    <div class="foot"></div>
+</footer>
 
 </body>
 </html>
