@@ -382,8 +382,7 @@ background-image: url('../images/box2_img.jpg');
     box-shadow: inset 0 0 0 1px var(--color);
 }
 
-.form-control::placeholder
-.form textarea::placeholder {
+::placeholder {
     color: #bbb;
 }
 
