@@ -5,15 +5,17 @@
     <title>SitOnChair</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Relaway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header class="page-header">
         <div class="container">
-    <!---  slash przenosi do katalogu --->
+    
+    <!---  slash przenosi do katalogu (czyli na glowna strone) -->
             <h1 class="page-logo">
                 <a href="/" class="page-logo-link">
                     sit <span>on</span> chair
@@ -35,14 +37,16 @@
                 <li><a href="">kontakt</a></li>
             </ul>
         </nav>
+    
     </div>
 </header>
 
 <div class="main-banner-bg">
     <div class="container">
+        
         <div class="banner">
-            <button class="button-prev" tabindex="2"> &lt</button>
-            <button class="button-next" tabindex="1"> &gt</button>
+            <button class="button-prev" tabindex="2"> &lt; </button>
+            <button class="button-next" tabindex="1"> &gt; </button>
         
             <div class="banner-slides">
                 <div class="banner-slide banner-slide-show"></div>
@@ -50,49 +54,104 @@
                 <div class="banner-slide"></div>
             </div>
         </div>
+    
     </div>
 </div>
 
-<div class="main-contact">
+<section class="main-news main-section">
     <div class="container">
-        <h2 class="section-title">kontakt</h2>
-        <form action="" method="POST" class="form">
+        <div class="row">
+            <div class="col-1-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium mollitia doloribus vero similique vitae. Facilis qui, perspiciatis, eos corrupti cupiditate, nam assumenda autem perferendis repellendus in blanditiis dolores nemo!    
+            </div>
+            <div class="col-1-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur molestiae voluptatum quis, quidem necessitatibus laborum vero mollitia hic, nemo tempora, cumque molestias! Accusantium ut animi, molestiae deleniti ratione nobis perferendis.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-prices main-section">
+    <div class="container">
+        <h2 class="section-title">
+            Cennik
+        </h2>
+            <div class="row">
+                <div class="col-1-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium mollitia doloribus vero similique vitae. Facilis qui, perspiciatis, eos corrupti cupiditate, nam assumenda autem perferendis repellendus in blanditiis dolores nemo! 
+                </div>
+                <div class="col-1-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium mollitia doloribus vero similique vitae. Facilis qui, perspiciatis, eos corrupti cupiditate, nam assumenda autem perferendis repellendus in blanditiis dolores nemo!    
+                </div>
+                <div class="col-1-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium mollitia doloribus vero similique vitae. Facilis qui, perspiciatis, eos corrupti cupiditate, nam assumenda autem perferendis repellendus in blanditiis dolores nemo!    
+                </div>
+            </div>
+    </div>
+</section>
+
+<section class="main-contact main-section">
+    <div class="container">
+        <h2 class="section-title">
+            kontakt
+        </h2>
+
+        <form class="form">
             <div class="form-left">
+
                 <div class="form-row">
-                    <input type="text" name="name" id="form-left.name" placeholder="imie">
-                    <label for="name">Wpisz imie</label>
+                    <input class="form-control" name="name" id="form-left-name" placeholder="imię">
+                    <label for="name" class="visuallyHidden">imię</label>
                 </div>
 
                 <div class="form-row">
-                    <input type="email" name="name" id="form-left.name" placeholder="email">
-                    <label for="name">Wpisz email</label>
+                    <input class="form-control" name="email" id="form-left-email" placeholder="email">
+                    <label for="email" class="visuallyHidden">email</label>
                 </div>
 
                 <div class="form-row">
-                    <input type="textarea" id="form-left.message" placeholder="wiadomosc">
-                    <label for="name">Wpisz wiadomosc</label>
+                    <textarea class="form-control" name="message" id="form-left-message" placeholder="wiadomość"></textarea>
+                    <label for="message" class="visuallyHidden">wiadomość</label>
                 </div>
+
             </div>
             
             <div class="form-right">
+                <div class="form-gdpr"></div>
+
                 <div class="form-row">
+                    
                     <label class="checkbox">
                         <input type="checkbox" class="checkbox-input" name="checkbox" id="checkbox">
                         <span class="checkbox-text">
-                            Zgadzam sie na przetwarzanie danych osobowych
+                            Zgadzam się na przetwarzanie danych osobowych
                         </span>
                     </label>
 
                 </div>
 
+                <div class="form-row">
+                    <button type="submit" class="form-submit-btn">
+                        wyślij
+                    </button>
+                </div>
             </div>
-        </form>
-    </div>    
-</div>
 
-<footer>
-    <div class="foot"></div>
-</footer>
+        </form>
+    </div>
+</section> 
+
+<section class="footer">
+    <div class="footer-left">
+        Copyright 2014 | All Rights Reserved. - Sit On Chair
+    </div>
+    <div class="footer-right">
+        <div class="right-social-media"></div>
+        <div class="right-text">
+            SIT <span>ON</span> CHAIR
+        </div>
+    </div>
+</section>   
 
 </body>
 </html>
