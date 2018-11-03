@@ -54,8 +54,10 @@ body {
     padding-bottom: 2px;
     border-bottom: 7px solid var(--color);
     width: 120px;
-    margin-top: 62%;
-    text-transform: capitalize; 
+    margin-top: -30px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    position: relative;
 }
 
 .section-news-title2 {
@@ -66,6 +68,7 @@ body {
     width: 110px; 
     margin-top: 30px;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .btn {
@@ -91,7 +94,7 @@ body {
     display: flex;
 }
 
-.row .col-1-3 {
+.row .col-1-3 :not(.box1, .box2) {
     padding:0 15px;
     width: 33.3333%;
 }
@@ -103,7 +106,6 @@ body {
 .page-header {
     height: 40px;
     background: #000;
-    z-index: 1000;
     position: relative;
     z-index: 100000;
 }
@@ -267,6 +269,14 @@ line-height: 25px;
 /* -------------------------------------------- */
 /* main-news main-section with boxes */
 /* -------------------------------------------- */
+.transparent-banner {
+    width: 310px;
+    height: 40px;
+    margin-top: 150px;
+    background-color: #fff;
+    opacity: 0.4;
+    z-index: 50;
+}
 
 .main-news .col-1-3 {
     margin-right: 20px;
@@ -279,7 +289,7 @@ line-height: 25px;
 }
 
 .main-news .box1 {
-    background-image: url('../images/box1_img.jpg');
+    background-image: url('../images/box1_img.jpg');    
 }
 
 .main-news .box2 {
@@ -288,7 +298,6 @@ background-image: url('../images/box2_img.jpg');
 
 .main-news .box1,
 .main-news .box2 {
-    background-position: center;
     background-repeat: no-repeat;
     font-weight: bolder;
 }
@@ -297,6 +306,7 @@ background-image: url('../images/box2_img.jpg');
 .box2-txt :not(.box-span-txt)
 {
     text-transform: capitalize;
+    padding: 10px;
 }
 
 .box-span-txt {
@@ -304,7 +314,6 @@ background-image: url('../images/box2_img.jpg');
 }
 
 .box3 {
-    margin-top: 12px;
     border: 2px solid #F1F1F1;
 }
 
@@ -314,6 +323,7 @@ background-image: url('../images/box2_img.jpg');
 
 .box3-txt-rest {
     color: #575757;
+    margin-left: 10px;
 }
 /* -------------------------------------------- */
 /* prices */
@@ -343,6 +353,7 @@ background-image: url('../images/box2_img.jpg');
 
 .form-left {
     width: 635px;
+    
 }
 
 .form-gdpr {
