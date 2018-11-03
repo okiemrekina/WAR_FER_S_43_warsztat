@@ -1,5 +1,6 @@
 :root {
     --color: #24BAA0;
+    --color2: #1F8976;
 }
 
 * {
@@ -115,6 +116,8 @@ body {
 
 .page-nav-list {
     display: flex;
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-decoration: none;
 }
@@ -135,7 +138,9 @@ body {
 }
 
 .page-nav-list a :not(.page-nav-sublist) {
-text-transform: uppercase;
+text-transform: uppercase;  
+font-weight: normal;
+line-height: 25px;
 }
 
 .page-nav-list a:hover {
@@ -184,7 +189,6 @@ text-transform: uppercase;
     position: absolute;
     left: 0;
     top: -16px;
-    /* 16 height i top */
 }
 
 /* -------------------------------------------- */
@@ -210,7 +214,6 @@ text-transform: uppercase;
     cursor: pointer;
     outline: none;
 }
-
 
 .button-next:active, 
 .button-prev:active {
@@ -326,6 +329,7 @@ textarea.form-control {
 }
 
 .form label:not(.checkbox) {
+    /* to hide the text */
     position: absolute;
     left: -9999999px;
 }
@@ -336,12 +340,12 @@ textarea.form-control {
     margin-bottom: 30px;
 }
 
-.checbox-input {
+.checkbox-input {
     width: 50px;
     height: 50px;
-    color:darkgray;
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
     border: 1px solid var(--color);
     flex-shrink: 0;
     cursor: pointer;
@@ -349,11 +353,10 @@ textarea.form-control {
     margin-right: 15px;
 }
 
-.checbox-input:checked {
-    background: url(../images/form_ok.jpg);
+.checkbox-input:checked {
+    background: url('../images/form_ok.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;   
 }
 
 .checkbox-text {
@@ -368,12 +371,60 @@ textarea.form-control {
 
 .footer {
     padding: 20px;
-    display: flex;
     color: #bbb;
-    font-size: 15px;
+    font-size: 16px;
     font: bold;
+    position: relative;
+}
+
+.footer .container {
+    display: flex;
+}
+
+.footer-left {
+    margin-top: 20px;
 }
 
 .footer-right {
-    margin-left: 70%;
+    margin-left: 30%;
+    display: flex;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: flex-start; 
+    
+}
+
+.footer-social-media {
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.flickr {
+background-image: url('../images/flickr.png');
+}
+
+.vimeo {
+background-image: url('../images/vimeo.png');
+}
+
+.pinterest {
+background-image: url('../images/pinterest.png');
+}
+
+.twitter {
+background-image: url('../images/twitter.png');
+}
+
+.footer-txt {
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-left: 170px;
+}
+
+.footer-span-txt {
+    font-weight: bolder;
 }
