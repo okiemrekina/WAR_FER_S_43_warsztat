@@ -1,2 +1,4 @@
 .zip
 _config.yml
+.json
+/node-modules
