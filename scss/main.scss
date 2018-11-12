@@ -1,0 +1,21 @@
+@import './partial/_reset.css'
+@import './scss/partial/_normalise.css';
+@import './scss/partial/_content.css';
+// @import './scss/partial/base';
+
+// @import './scss/modules/colors;
+// @import './scss/modules/all';
+
+// @import './scss/modules/';
+
+
+// [folder] scss
+//     [folder] modules
+//                 _all.scss - zmienne przechowujące rozmiar czcionki lub szerokości
+//                 _colors.scss - zmienne z kolorami
+//     [folder] partials
+//                 _footer.scss - style dla elementu footer, wykorzystaj wcześniej zdefiniowane zmienne
+//                 _header.scss - style dla elementu header, wykorzystaj wczesniej zdefiniowane zmienne
+//                 _content.scss - style dla elementu article, wykorzystaj wczesniej zdefiniowane zmienne
+//                 _base.scss - style dla całej strony
+//     main.scss - tylko importy wcześniej stworzonych plików
