@@ -4,6 +4,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const notifier = require('node-notifier');
+const c = require('ansi-colors');
+
 
 //sass.compiler = require('node-sass');
 
@@ -12,13 +14,16 @@ function showError(err) {
         title: 'Błąd SASS',
         message: err.messageFormatted
       });
+
+      console.log(c.red('=============ERROR========================='));
+      console.log(c.red(err.messageFormatted));
 }
 
 gulp.task('sass', function () {
     return gulp.src('./scss/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
-            outputStyle: 'compressed' //use compressed style
+            outputStyle: 'nested' //use compressed style
         }).on('error', showError))
         .pipe(autoprefixer({
 			browsers: ['last 2 versions']
@@ -48,6 +53,6 @@ gulp.task('browser-sync', function() {
 
 // Default 'my hello'
 gulp.task('default', function() {
-    console.log('======== Starting work ========');
+    console.log(c.green('======== Starting work ========'));
     gulp.start( ['browser-sync', 'sass', 'watch'] );
 })
