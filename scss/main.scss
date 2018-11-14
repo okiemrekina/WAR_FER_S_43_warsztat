@@ -1,13 +1,15 @@
-@import './partial/_reset.css'
-@import './scss/partial/_normalise.css';
-@import './scss/partial/_content.css';
-// @import './scss/partial/base';
+@import './modules/all';
+@import './modules/colors';
 
-// @import './scss/modules/colors;
-// @import './scss/modules/all';
+// @import './modules/contentDoObrobienia.css' //do przerobienia i usuniecia
 
-// @import './scss/modules/';
+@import './partial/base';
+@import './partial/content';
+@import './partial/header';
+@import './partial/footer';
 
+@import './vendors/_normalise.css'; //do przerobienia na scss
+@import './vendors/_reset.css' //do przerobienia na scss
 
 // [folder] scss
 //     [folder] modules
