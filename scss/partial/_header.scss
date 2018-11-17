@@ -1,0 +1,114 @@
+// ------------------------------------------
+// page header
+// ------------------------------------------
+
+
+.page-header {
+    height: 40px;
+    background: #000;
+    position: relative;
+    z-index: 100000;
+}
+
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.page-logo {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.page-logo-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-logo span {
+    color: $colorPrimary;
+    font-weight: 700;
+}
+
+.page-nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.page-nav-list li {
+    position: relative;
+}
+
+.page-nav-list a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 40px;
+    display: block;
+    transition: .5s;
+}
+
+.page-nav-list a :not(.page-nav-sublist) {
+text-transform: uppercase;  
+font-weight: normal;
+line-height: 25px;
+}
+
+.page-nav-list a:hover {
+    color: $colorPrimary;
+}
+
+.page-nav-sublist {
+    text-transform: capitalize;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 25%;
+    background: #000;
+    list-style: none;
+    padding: 10px;
+    margin: -1px;
+    transform: translate(-50px, 0);
+    /* do płynnego chowania i pokazywania elementu */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.page-nav-list li:hover .page-nav-sublist {
+    opacity: 1;
+    visibility: visible;
+}
+
+.page-nav-sublist::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border:10px solid transparent;
+    border-bottom-color: #000; 
+    display: block;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+}
+
+.page-nav-sublist::before {
+    content: "";
+    height: 16px;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: -16px;
+}

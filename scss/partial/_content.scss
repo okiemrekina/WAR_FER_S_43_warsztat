@@ -1,0 +1,460 @@
+/* ---------------------------------------------------------- */
+/* klasy globalne */
+/* ---------------------------------------------------------- */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.main-section {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 22px;
+    color: #575757;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 6px;
+    border-bottom: 7px solid $colorPrimary;
+    width: 320px;
+    margin-bottom: 60px;
+}
+
+.section-news-title {
+    font-size: 13px;
+    color: $colorPageHeader;
+    padding-bottom: 2px;
+    border-bottom: 7px solid $colorPrimary;
+    width: 120px;
+    margin-top: -30px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    position: relative;
+}
+
+.section-news-title2 {
+    font-size: 13px;
+    color: $colorPageHeader;
+    padding-bottom: 2px;
+    border-bottom: 7px solid $colorPrimary;
+    width: 110px; 
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.plan-join-btn {
+    position: absolute;
+    bottom: 20px;
+}
+
+.plan-box {
+    position: relative;
+    background: #f9f9f9;
+    position: relative;
+}
+
+.plan-box::after,
+.plan-box::before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    top: -40px;
+    left: 120px;
+    background-color: white;
+}
+
+.plan-box::before {
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
+.btn {
+    border:0;
+    display: inline-block;
+    color: $colorBtn;
+    background: $colorPrimary;
+    padding:10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: $colorPrimary;
+}
+
+.btn2 {
+    border:0;
+    display: inline-block;
+    color: $colorPrimary;
+    background: $colorBtn;
+    padding:10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.btn2:hover {
+    background: $colorBackground;
+}
+
+.row {
+    /* margin-left:-15px; */
+    margin-right:-15px;
+    display: flex;
+}
+
+.row .col-1-3 :not(.box1, .box2) {
+    padding:0 15px;
+    width: 33.3333%;
+}
+
+
+/* -------------------------------------------- */
+/* slider */
+/* -------------------------------------------- */
+
+.banner {
+    height: 505px;
+    display: flex;
+}
+.main-banner-bg {
+    display: none;
+    /* background: linear-gradient(45deg, #fafafa, #ddd) */
+    background: linear-gradient(white,gray);
+}
+
+.button-prev, 
+.button-next {
+    width: 100px;
+    font-size: 70px;
+    color: $colorPrimary;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-next:active, 
+.button-prev:active {
+    color: #000;
+}
+
+.button-next {
+    order: 1;
+}
+
+.banner-slides {
+    flex-grow: 1;
+    background: yellow;
+    position: relative;
+}
+
+.banner-slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.banner-slide-show {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* -------------------------------------------- */
+/* main-news main-section with boxes */
+/* -------------------------------------------- */
+.transparent-banner {
+    width: 310px;
+    height: 40px;
+    margin-top: 150px;
+    background-color: #fff;
+    opacity: 0.4;
+    z-index: 50;
+}
+
+.main-news .col-1-3 {
+    margin-right: 20px;
+}
+
+.main-news .col-1-3 {
+    width: 310px;
+    height: 250px;
+    font-size: 12px;
+}
+
+.main-news .box1 {
+    background-image: url('../images/box1_img.jpg');    
+}
+
+.main-news .box2 {
+background-image: url('../images/box2_img.jpg');
+}
+
+.main-news .box1,
+.main-news .box2 {
+    background-repeat: no-repeat;
+    font-weight: bolder;
+}
+
+.box1-txt
+.box2-txt :not(.box-span-txt)
+{
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.box-span-txt {
+    text-transform: uppercase;
+}
+
+.box3 {
+    border: 2px solid #F1F1F1;
+}
+
+.box3-txt {
+    font-weight: bolder;
+}
+
+.box3-txt-rest {
+    color: #575757;
+    margin-left: 10px;
+}
+/* -------------------------------------------- */
+/* prices */
+/* -------------------------------------------- */
+
+.main-prices {
+    background-color: #F1F1F1;
+}
+
+.main-prices .row {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-prices .col-1-3 {
+    height: 450px;
+    width: 310px;
+    border: .5px solid #575757;
+    text-align: center;
+}
+
+.main-prices .standard-plan{
+    border: 1px solid $colorPrimary;
+}
+
+.main-prices .basic,
+.main-prices .standard, 
+.main-prices .advanced {
+    padding: 10px;
+    width: 308px;
+}
+
+.prices-title {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.bubble-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bubble {
+    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+    text-align: center;
+    border: 2px solid gray;
+    margin: 0 auto;
+    background-color: #FFFF;
+    color: gray;
+    font-weight: bold;
+    font-size: 42px;
+    padding-top: 30px;
+}
+
+.bubble sup {
+    font-size: 15px;
+}
+
+.bubble p {
+    font-size: 18px;
+}
+
+.prices-title {
+    margin-top: 25px;
+}
+
+.basic-plan .prices-title,
+.advanced-plan .prices-title {
+    color: $colorPrimary;
+}
+
+.standard-plan .prices-title {
+    color: #fff;
+}
+
+.standard-plan {
+    background-color: $colorPrimary;
+}
+
+.standard-plan .includes-1, 
+.standard-plan .includes-3 {
+    background-color: #fff;
+}
+
+.basic-plan .includes-1,
+.advanced-plan .includes-1, 
+.advanced-plan .includes-3 {
+    background-color: #bbb;
+}
+
+.includes-2, 
+.includes-4 {
+    background-color: lightgray;
+}
+
+
+/* -------------------------------------------- */
+/* form*/
+/* -------------------------------------------- */
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.form-right { 
+    width: 345px;
+}
+
+.form-left {
+    width: 635px;
+    
+}
+
+.form-gdpr {
+    height: 200px;
+    background: url(../images/red_chair.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: -25px;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    margin-bottom: 25px;
+}
+
+.form-control {
+    height: 68px;
+    border: 1px solid $colorPrimary;
+    font-size: 33px;
+    width: 100%;
+    padding: 0 10px;
+    outline: none;
+}
+
+.form-control:focus {
+    box-shadow: inset 0 0 0 1px $colorPrimary;
+}
+
+::placeholder {
+    color: #bbb;
+}
+
+#form-left-name {
+    text-transform: capitalize;    
+}
+
+textarea.form-control {
+    height: 180px;
+    resize: none;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.form-submit-btn {
+    width: 100%;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: $colorPrimary;
+}
+
+.form label:not(.checkbox) {
+    /* to hide the text */
+    position: absolute;
+    left: -9999999px;
+}
+
+.checkbox { 
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.checkbox-input {
+    width: 50px;
+    height: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid $colorPrimary;
+    flex-shrink: 0;
+    cursor: pointer;
+    outline: none;
+    margin-right: 15px;
+}
+
+.checkbox-input:checked {
+    background: url('../images/form_ok.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.checkbox-text {
+    font-size: 20px;
+    font-weight: 300;
+    color: #aaa;
+}

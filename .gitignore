@@ -1,2 +1,5 @@
-.zip
+*.zip
 _config.yml
+*.json
+node_modules/
+.vscode

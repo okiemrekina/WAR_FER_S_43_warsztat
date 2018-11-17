@@ -1,0 +1,63 @@
+// ------------------------------------------
+// footer
+// ------------------------------------------
+
+.footer-txt {
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-left: 170px;
+}
+
+.footer-span-txt {
+    font-weight: bolder;
+}
+
+.footer {
+    padding: 20px;
+    color: #bbb;
+    font-size: 16px;
+    font: bold;
+    position: relative;
+}
+
+.footer .container {
+    display: flex;
+}
+
+.footer-left {
+    margin-top: 20px;
+}
+
+.footer-right {
+    margin-left: 30%;
+    display: flex;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: flex-start; 
+    
+}
+
+.footer-social-media {
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.flickr {
+background-image: url('../images/flickr.png');
+}
+
+.vimeo {
+background-image: url('../images/vimeo.png');
+}
+
+.pinterest {
+background-image: url('../images/pinterest.png');
+}
+
+.twitter {
+background-image: url('../images/twitter.png');
+}
