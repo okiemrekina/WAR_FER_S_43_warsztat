@@ -1,15 +1,13 @@
 @import './modules/all';
 @import './modules/colors';
 
-// @import './modules/contentDoObrobienia.css' //do przerobienia i usuniecia
-
 @import './partial/base';
 @import './partial/content';
 @import './partial/header';
 @import './partial/footer';
 
-@import './vendors/_normalise.css'; //do przerobienia na scss
-@import './vendors/_reset.css' //do przerobienia na scss
+@import './vendors/_normalise.css';
+@import './vendors/_reset.css'
 
 // [folder] scss
 //     [folder] modules
