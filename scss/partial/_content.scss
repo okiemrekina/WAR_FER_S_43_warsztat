@@ -72,12 +72,12 @@
     content: "";
     position: absolute;
     border-radius: 100%;
-    border: 3px solid $colorPricesLightest;
     width: 60px;
     height: 60px;
     top: -40px;
-    left: 120px
+    left: 120px;
 }
+
 .plan-box::after {
     @include plan-box-circledcircle();
     background-color:#fff; 
@@ -95,6 +95,15 @@
     border: 2px solid #fff;
 }
 
+.standard-plan::after{
+    @include plan-box-circledcircle();
+    background-color: $colorPrimary;
+    border: 2px solid transparent;
+}
+
+.standard-plan::before{
+    background-color: #fff;
+}
 
 .btn {
     border:0;
