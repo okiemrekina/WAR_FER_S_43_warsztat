@@ -71,24 +71,34 @@ body {
   background: #f9f9f9;
   position: relative; }
 
-.plan-box::after,
-.plan-box::before {
+.plan-box::after {
   content: "";
   position: absolute;
   border-radius: 100%;
+  border: 3px solid #e3e3e3;
   width: 60px;
   height: 60px;
   top: -40px;
   left: 120px;
-  background-color: white; }
+  background-color: #fff;
+  border: 2px solid #e3e3e3; }
 
 .plan-box::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  border: 3px solid #e3e3e3;
+  width: 60px;
+  height: 60px;
+  top: -40px;
+  left: 120px;
   z-index: 2;
   width: 30px;
   height: 30px;
-  background-color: gray;
+  background-color: #c1c1c1;
   margin-left: 15px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  border: 2px solid #fff; }
 
 .btn {
   border: 0;
@@ -105,7 +115,7 @@ body {
   font-weight: bold; }
 
 .btn:hover {
-  background: #24BAA0; }
+  background: #1F8976; }
 
 .btn2 {
   border: 0;
@@ -122,7 +132,15 @@ body {
   font-weight: bold; }
 
 .btn2:hover {
-  background: #bbb; }
+  background: #f1f1f1; }
+
+.submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .row {
   /* margin-left:-15px; */
@@ -256,7 +274,8 @@ body {
 .main-prices .col-1-3 {
   height: 450px;
   width: 310px;
-  border: .5px solid #575757;
+  border: 3px solid #e3e3e3;
+  border-radius: 2.5px;
   text-align: center; }
 
 .main-prices .standard-plan {
@@ -282,10 +301,10 @@ body {
   height: 130px;
   width: 130px;
   text-align: center;
-  border: 2px solid gray;
+  border: 2px solid #e3e3e3;
   margin: 0 auto;
   background-color: #FFFF;
-  color: gray;
+  color: #c1c1c1;
   font-weight: bold;
   font-size: 42px;
   padding-top: 30px; }
@@ -311,7 +330,7 @@ body {
 
 .standard-plan .includes-1,
 .standard-plan .includes-3 {
-  background-color: #fff; }
+  background-color: #e3e3e3; }
 
 .basic-plan .includes-1,
 .advanced-plan .includes-1,
@@ -320,7 +339,13 @@ body {
 
 .includes-2,
 .includes-4 {
-  background-color: lightgray; }
+  background-color: #f1f1f1; }
+
+.includes-1,
+.includes-2,
+.includes-3,
+.includes-4 {
+  padding: 5px; }
 
 /* -------------------------------------------- */
 /* form*/

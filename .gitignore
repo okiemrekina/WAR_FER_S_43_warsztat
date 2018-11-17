@@ -3,3 +3,4 @@ _config.yml
 *.json
 node_modules/
 .vscode
+.lock
