@@ -350,6 +350,7 @@ background-image: url('../images/box2_img.jpg');
 
 .main-prices {
     background-color: #F1F1F1;
+    padding: 15px;
 }
 
 .main-prices .row {
@@ -363,6 +364,7 @@ background-image: url('../images/box2_img.jpg');
     width: 310px;
     border: .5px solid #575757;
     text-align: center;
+    padding: 5px;
 }
 
 .main-prices .standard-plan{

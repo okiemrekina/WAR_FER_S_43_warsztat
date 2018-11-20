@@ -143,12 +143,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .banner img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; }
 
 .main-banner-bg {
-  display: none;
-  /* background: linear-gradient(45deg, #fafafa, #ddd) */
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(gray));
-  background: linear-gradient(white, gray); }
+  background: linear-gradient(45deg, #fafafa, #D3D4D9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#D4D3DB));
+  background: linear-gradient(#F8F8F8, #D4D3DB); }
 
 .button-prev,
 .button-next {
@@ -173,22 +176,58 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background: yellow;
   position: relative; }
 
 .banner-slide {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s; }
 
 .banner-slide-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin: 0 auto;
   opacity: 1;
   z-index: 1; }
+
+.black-chair-img {
+  background-image: url(../images/black_chair.png);
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  height: 350px; }
+
+.banner-content {
+  text-align: center;
+  width: 60%; }
+  .banner-content .b-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .banner-content span {
+    color: #24BAA0; }
+  .banner-content .b-text {
+    color: #383838;
+    font-weight: bold;
+    width: 100%;
+    font-size: 14px;
+    padding: 20px;
+    margin: auto; }
+  .banner-content .more-button {
+    width: 800px;
+    height: 200px;
+    text-transform: uppercase;
+    padding: 20px; }
 
 /* -------------------------------------------- */
 /* main-news main-section with boxes */
